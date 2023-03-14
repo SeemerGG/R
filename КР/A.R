@@ -22,7 +22,8 @@ Res[4] <- round(sd(rnorm(Res[2]+7, mean = 5)), 0)
 t4 <- Sys.time()
 Time[4] <- t4 - t3
 
-arr <- array(xA, 5, length(xA)/5)
+arr <- array(xA, dim = c(5, length(xA)/5))
+Res[5] <- round(sum(sin(arr)), 4)
 t5 <- Sys.time()
 Time[5] <- t5 - t4
 
