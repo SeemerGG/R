@@ -8,6 +8,3 @@ map(data[seq(3, ncol(data))], function(x) length(x[x>7])) #количество 
 map(data[seq(3, ncol(data))], function(x) length(x[x<3])) # количество людей которым мало наличия Гослинга, чтобы поставить оценку больше 7
 sort(colMeans(data[seq(3, ncol(data))], na.rm = TRUE, dims = 1), decreasing = TRUE) #выводим рейтинг фильмов по убыванию
 barplot(height = colMeans(data[seq(3, ncol(data))], na.rm = TRUE, dims = 1)) #делаем столбчатую диаграмму
-
-
-     
