@@ -20,6 +20,15 @@ install.packages('stats4')
 install.packages('strucchange')
 install.packages('zoo')
 
+install.packages('tidyverse')
+install.packages('scatterplot3d')
+install.packages('reshape2')
+install.packages('factoextra')
+install.packages('plotly')
+install.packages('NbClust')
+install.packages('caret')
+install.packages('dendextend')
+
 library(tidyverse)
 library(scatterplot3d)
 library(reshape2)
@@ -36,6 +45,7 @@ library(randomForest)
 library(gridExtra)
 library(knitr)
 #Part 1
+
 
 data <- read.csv('student-mat.csv')
 summary(data)
